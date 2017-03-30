@@ -7,8 +7,9 @@
 <table class="table table-boldered">
   <% @jobs.each do |job| %>
   <tr>
+
     <td>
-      <%= link_to(job.title, job_path(job))%>
+      <%= link_to(job.title, job_path(job)) %>
     </td>
     <td>
       <%= link_to("Edit", edit_job_path(job)) %> |
@@ -18,5 +19,5 @@
       <%= job.created_at %>
     </td>
   </tr>
-    <%end%>
-  </table>
+  <% end %>
+</table>
